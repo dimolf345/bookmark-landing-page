@@ -1,0 +1,41 @@
+@use '../components/variables' as *;
+
+nav {
+  padding: $mobile-padding-stand !important;
+}
+.navbar {
+  height: 3rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.bookmark-logo {
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  background: url("../../../images/logo-bookmark.svg");
+  margin-right: 0.6rem;
+}
+
+.nav-link,
+.navbar-brand {
+  color: $very-dark-blue;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+.navbar-toggler-icon {
+  background: url("../../../images/icon-hamburger.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: $mobile) {
+}

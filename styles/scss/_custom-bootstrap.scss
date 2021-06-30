@@ -1,0 +1,16 @@
+$soft-blue: #5267df;
+$soft-red: #fa5959;
+$very-dark-blue: #242a45;
+$grayish-blue: #9194a2;
+
+$primary: $soft-blue;
+$secondary: $soft-red;
+
+.container,
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+// IMPORT BOOTSTRAP FILE
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

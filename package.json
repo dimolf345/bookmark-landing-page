@@ -1,0 +1,31 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "The bookmark landing page challenge from FrontendMentor.io",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch ./styles/scss:./styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimolf345/bookmark-landing-page.git"
+  },
+  "keywords": [
+    "Bootstrap5",
+    "Learning",
+    "CSS",
+    "Frontend"
+  ],
+  "author": "Luca Di Molfetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimolf345/bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/dimolf345/bookmark-landing-page#readme",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
