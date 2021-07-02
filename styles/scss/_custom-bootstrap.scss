@@ -12,5 +12,9 @@ $secondary: $soft-red;
   padding-right: 0 !important;
 }
 
+.btn-secondary {
+  color: #242a45;
+}
+
 // IMPORT BOOTSTRAP FILE
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -10,6 +10,10 @@
   padding-right: 0 !important;
 }
 
+.btn-secondary {
+  color: #242a45;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10757,22 +10761,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-* {
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-}
-
 nav {
-  padding: 1.875rem !important;
+  height: 3rem;
 }
 nav button {
   text-transform: uppercase;
 }
 
 .navbar {
-  min-height: 3rem;
+  padding: 0;
 }
 
 .navbar-toggler {
@@ -10820,6 +10817,8 @@ nav button {
   color: white;
   min-width: 7rem;
   font-size: 0.9rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 5rem;
 }
 #login:hover {
   background-color: transparent;
@@ -10840,8 +10839,13 @@ nav button {
 }
 
 .mobile-expanded {
-  background-color: #242a45;
+  position: absolute;
+  z-index: 10;
+  margin: -1.875rem;
+  padding: 1.875rem;
+  background-color: rgba(36, 42, 69, 0.9);
   height: 100vh;
+  width: 100vw;
   align-items: flex-start;
 }
 .mobile-expanded #navbarNav {
@@ -10871,7 +10875,6 @@ nav button {
 }
 .mobile-expanded .navbar-toggler-icon {
   background: url("../../../images/icon-close.svg");
-  background-color: #242a45;
   color: white;
   background-position: center center;
   background-repeat: no-repeat;
@@ -10887,6 +10890,109 @@ nav button {
   color: #242a45;
 }
 
+.landing {
+  height: 100%;
+}
+
+.landing .col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.text {
+  text-align: center;
+}
+.text h2, .text .h2 {
+  text-transform: capitalize;
+  font-size: 1.875rem;
+  line-height: 40px;
+}
+.text .btn-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.text .btn {
+  font-size: 0.875rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  min-width: 8rem;
+  height: 3rem;
+  text-align: center;
+  padding-top: 0.75rem;
+}
+
+.image {
+  padding-top: 3rem;
+}
+
+.ellipse {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 30%;
+  z-index: -2;
+  min-height: 60%;
+  border-top-left-radius: 316.5px;
+  border-bottom-left-radius: 316.5px;
+  background-color: #5267df;
+  overflow: hidden;
+}
+
+@media (min-width: 767px) {
+  .text {
+    text-align: justify;
+  }
+  .text h2, .text .h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .text .btn-container {
+    margin-top: 1rem;
+    justify-content: start;
+  }
+  .text .btn-container .btn {
+    margin-right: 2rem;
+  }
+
+  .ellipse {
+    min-height: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .landing {
+    padding-top: 3.5rem;
+  }
+
+  .text {
+    padding-right: 3rem;
+  }
+  .text h2, .text .h2 {
+    font-size: 3rem;
+    line-height: 3.25rem;
+  }
+  .text p {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 767px) {
+  .text {
+    order: 2;
+  }
+}
+.features {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .features p {
+    padding: 0 6rem;
+  }
+}
 * {
   padding: 0;
   border: 0;
@@ -10901,9 +11007,20 @@ a:hover {
   color: inherit;
 }
 
-@media (min-width: 1024px) {
-  body {
-    padding: 2rem 3rem 2rem 5rem;
+p {
+  color: #9194a2;
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+}
+
+@media (min-width: 992px) {
+  main {
+    padding: 2rem 5rem 2rem 8rem;
+  }
+}
+@media (max-width: 992px) {
+  main {
+    margin: 1.875rem !important;
   }
 }
 

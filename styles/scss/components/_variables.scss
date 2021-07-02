@@ -1,16 +1,20 @@
-* {
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-}
-
 $desktop: 1440px;
 $mobile: 375px;
-$middle: 1024px;
+$md: 767px;
+$middle: 992px;
 
 $mobile-padding-stand: 1.875rem;
 
 $navlink-desktop-font-size: 0.9rem;
 $navlink-mobile-font-size: 1.4rem;
 $navlink-letter-spacing: 0.08rem;
+
+$landing-header2-desktop: 3rem;
+$landing-header2-md: 2rem;
+$landing-header2-mobile: 1.875rem;
+
+$standard-paragraph: 0.9375rem;
+$text-paragraph: 1.125rem;
+$btn-font-size: 0.875rem;
+
+$btn-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);

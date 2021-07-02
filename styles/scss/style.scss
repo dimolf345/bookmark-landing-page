@@ -1,6 +1,15 @@
 @import "custom-bootstrap";
 @import "./sections/navbar";
 @import "./components/variables";
+@import "./sections/landing";
+@import "./sections/features";
+
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
 
 a {
   text-decoration: none;
@@ -10,8 +19,20 @@ a {
   }
 }
 
+p {
+  color: $grayish-blue;
+  margin-top: 1rem;
+  font-size: $standard-paragraph;
+}
+
 @media (min-width: $middle) {
-  body {
-    padding: 2rem 3rem 2rem 5rem;
+  main {
+    padding: 2rem 5rem 2rem 8rem;
+  }
+}
+
+@media (max-width: $middle) {
+  main {
+    margin: $mobile-padding-stand !important;
   }
 }

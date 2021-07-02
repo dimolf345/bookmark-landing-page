@@ -1,15 +1,14 @@
-@use '../components/variables' as *;
+@import "../components/variables";
 
 nav {
-  padding: $mobile-padding-stand !important;
-
   button {
     text-transform: uppercase;
   }
+  height: 3rem;
 }
 
 .navbar {
-  min-height: 3rem;
+  padding: 0;
 }
 
 .navbar-toggler {
@@ -57,6 +56,8 @@ nav {
   color: white;
   min-width: 7rem;
   font-size: $navlink-desktop-font-size;
+  box-shadow: $btn-box-shadow;
+  margin-right: 5rem;
 
   &:hover {
     background-color: transparent;
@@ -79,8 +80,13 @@ nav {
 
 //Start of Dark theme mobile ul
 .mobile-expanded {
-  background-color: $very-dark-blue;
+  position: absolute;
+  z-index: 10;
+  margin: -$mobile-padding-stand;
+  padding: $mobile-padding-stand;
+  background-color: rgba($very-dark-blue, 0.9);
   height: 100vh;
+  width: 100vw;
   align-items: flex-start;
 
   #navbarNav {
@@ -91,7 +97,7 @@ nav {
     margin-left: 0;
     text-align: center;
     padding: 0.5rem 0;
-    font-size: 1.4rem;
+    font-size: $navlink-mobile-font-size;
     border-top: 1px solid rgba($grayish-blue, 0.5);
 
     &:hover {
@@ -116,7 +122,6 @@ nav {
 
   .navbar-toggler-icon {
     background: url("../../../images/icon-close.svg");
-    background-color: $very-dark-blue;
     color: white;
     background-position: center center;
     background-repeat: no-repeat;
@@ -134,7 +139,4 @@ nav {
     }
   }
 }
-//End of mobile dark ul
-
-@media (min-width: $mobile) {
-}
+//End of mobile dark u

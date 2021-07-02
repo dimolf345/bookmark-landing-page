@@ -1,0 +1,14 @@
+@import "../components/variables";
+
+.features {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media (min-width: $md) {
+  .features {
+    & p {
+      padding: 0 6rem;
+    }
+  }
+}
