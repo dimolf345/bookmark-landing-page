@@ -10767,9 +10767,21 @@ textarea.form-control-lg {
 nav {
   padding: 1.875rem !important;
 }
+nav button {
+  text-transform: uppercase;
+}
 
 .navbar {
-  height: 3rem;
+  min-height: 3rem;
+}
+
+.navbar-toggler {
+  padding: 0;
+  font-size: 1rem;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
 }
 
 .navbar-brand {
@@ -10789,17 +10801,90 @@ nav {
 .navbar-brand {
   color: #242a45;
   text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+}
+
+.nav-link:hover {
+  color: #fa5959;
 }
 
 .navbar-brand {
   font-weight: 500;
 }
 
+#login {
+  color: white;
+  min-width: 7rem;
+  font-size: 0.9rem;
+}
+#login:hover {
+  background-color: transparent;
+  color: #fa5959;
+}
+
 .navbar-toggler-icon {
+  height: 40px;
   background: url("../../../images/icon-hamburger.svg");
+  background-color: white;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.mobile-expanded {
+  background-color: #242a45;
+  height: 100vh;
+  align-items: flex-start;
+}
+.mobile-expanded #navbarNav {
+  margin-top: 2rem;
+}
+.mobile-expanded .nav-item {
+  margin-left: 0;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  border-top: 1px solid rgba(145, 148, 162, 0.5);
+}
+.mobile-expanded .nav-item:hover {
+  font-weight: 500;
+}
+.mobile-expanded .nav-item button {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.mobile-expanded .nav-link,
+.mobile-expanded .navbar-brand {
+  color: white;
+}
+.mobile-expanded .bookmark-logo {
+  background: url("../../../images/logo-bookmark-dark.svg");
+}
+.mobile-expanded .navbar-toggler-icon {
+  background: url("../../../images/icon-close.svg");
+  background-color: #242a45;
+  color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.mobile-expanded #login {
+  font-size: 1.4rem;
+  background-color: transparent;
+  border-color: rgba(145, 148, 162, 0.5);
+}
+.mobile-expanded #login:hover {
+  background-color: rgba(145, 148, 162, 0.5);
+  color: #242a45;
 }
 
 * {
@@ -10807,6 +10892,19 @@ nav {
   border: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 2rem 3rem 2rem 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,9 +2,23 @@
 
 nav {
   padding: $mobile-padding-stand !important;
+
+  button {
+    text-transform: uppercase;
+  }
 }
+
 .navbar {
-  height: 3rem;
+  min-height: 3rem;
+}
+
+.navbar-toggler {
+  padding: 0;
+  font-size: 1rem;
+  &:focus {
+    box-shadow: none;
+    border: none;
+  }
 }
 
 .navbar-brand {
@@ -24,18 +38,103 @@ nav {
 .navbar-brand {
   color: $very-dark-blue;
   text-transform: uppercase;
+  letter-spacing: $navlink-letter-spacing;
+}
+
+.nav-link {
+  font-size: $navlink-desktop-font-size;
+}
+
+.nav-link:hover {
+  color: $secondary;
 }
 
 .navbar-brand {
   font-weight: 500;
 }
 
+#login {
+  color: white;
+  min-width: 7rem;
+  font-size: $navlink-desktop-font-size;
+
+  &:hover {
+    background-color: transparent;
+    color: $secondary;
+  }
+}
+
 .navbar-toggler-icon {
+  height: 40px;
   background: url("../../../images/icon-hamburger.svg");
+  background-color: white;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-@media (max-width: $mobile) {
+.nav-item {
+  margin-left: 2rem;
+}
+
+//Start of Dark theme mobile ul
+.mobile-expanded {
+  background-color: $very-dark-blue;
+  height: 100vh;
+  align-items: flex-start;
+
+  #navbarNav {
+    margin-top: 2rem;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    border-top: 1px solid rgba($grayish-blue, 0.5);
+
+    &:hover {
+      font-weight: 500;
+    }
+
+    button {
+      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      width: 100%;
+    }
+  }
+
+  .nav-link,
+  .navbar-brand {
+    color: white;
+  }
+
+  .bookmark-logo {
+    background: url("../../../images/logo-bookmark-dark.svg");
+  }
+
+  .navbar-toggler-icon {
+    background: url("../../../images/icon-close.svg");
+    background-color: $very-dark-blue;
+    color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #login {
+    font-size: $navlink-mobile-font-size;
+    background-color: transparent;
+    border-color: rgba($grayish-blue, 0.5);
+
+    &:hover {
+      background-color: rgba($grayish-blue, 0.5);
+      color: $very-dark-blue;
+    }
+  }
+}
+//End of mobile dark ul
+
+@media (min-width: $mobile) {
 }
