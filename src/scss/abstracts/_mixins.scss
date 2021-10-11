@@ -1,0 +1,16 @@
+@mixin img-reset {
+  display: block;
+  width: 100%;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin absolute($top: null, $right: null, $bottom: null, $left: null) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  left: $left;
+  bottom: $bottom;
+}

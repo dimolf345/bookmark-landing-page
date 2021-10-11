@@ -1,0 +1,41 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "A frontend mentor challenge",
+  "scripts": {
+    "dev": "parcel ./src/index.html ",
+    "build": "parcel build ./src/index.html",
+    "compile-sass": "node-sass -w ./src/scss/main.scss ./src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimolf345/bookmark-landing-page.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Frontend-Mentor",
+    "Responsive",
+    "Parcel"
+  ],
+  "author": "Luca Di Molfetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimolf345/bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/dimolf345/bookmark-landing-page#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.1",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "autoprefixer": "^10.3.6",
+    "http-server": "^13.0.2",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0-rc.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-twbs-bootstrap": "^2.2.4"
+  }
+}

@@ -1,0 +1,93 @@
+//Custom.scss
+//Include any default variable overrides here (though functions won't be available)
+
+//Boostrap import
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//then add additional custom code here
+//=========GENERAL CLASSES========
+.btn {
+  padding: 1.2rem 2.4rem;
+  border-radius: 5px;
+  min-width: 11rem;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  &:active {
+    box-shadow: none !important;
+    transform: scale(0.95);
+  }
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: $color-primary;
+  border: 2px solid $color-primary;
+
+  &:hover {
+    color: $color-primary;
+    background-color: white;
+    border-color: $color-primary;
+  }
+}
+
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: $color-secondary;
+  border: 2px solid $color-secondary;
+  color: $white;
+
+  &:hover {
+    color: $text-hover;
+    background-color: white;
+    border-color: $text-hover;
+  }
+}
+
+.btn-light,
+.btn-light:focus,
+.btn-light:active {
+  background-color: $light-gray;
+  color: $very-dark-blue;
+  border: 2px solid $light-gray;
+  margin-left: 1.6rem;
+
+  &:hover {
+    background-color: white;
+    border-color: $grayish-blue;
+    color: $very-dark-blue;
+  }
+}
+
+// =========NAVBAR============
+.header {
+  padding: $default-padding-x-large;
+  text-transform: uppercase;
+  background-color: white;
+}
+.navbar-toggler-icon {
+  background: url("../assets/images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+}
+
+.nav-item {
+  margin-right: 4.4rem;
+}
+
+.nav-link {
+  color: $text-primary;
+  font-size: $font-size-link;
+
+  &:hover {
+    color: $text-hover;
+  }
+}
+
+#navbarNav {
+  .btn {
+    letter-spacing: 1.5px;
+    font-weight: $font-weight-reg;
+  }
+}

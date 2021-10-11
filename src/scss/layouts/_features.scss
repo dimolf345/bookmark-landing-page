@@ -1,0 +1,55 @@
+.features {
+  padding: $default-padding-x-large;
+  min-height: 80rem;
+
+  &__description {
+    max-width: 55rem;
+    margin: 3.2rem auto 0;
+  }
+
+  &__list {
+    max-width: 73rem;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 5rem auto;
+    font-size: 1.6rem;
+    border-bottom: 3px solid $light-gray;
+
+    .nav-item {
+      margin-right: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-link {
+      color: $text-secondary;
+      height: 100%;
+      display: block;
+      padding-bottom: 2.7rem;
+
+      &.active {
+        color: $text-primary;
+        border-bottom: 3px solid $soft-red;
+      }
+    }
+  }
+
+  &__image-container {
+    position: relative;
+  }
+  &__image {
+    position: relative !important;
+    z-index: 7;
+    @include img-reset;
+  }
+}
+
+.tab-pane {
+  min-height: max-content;
+}
+
+#feature1 {
+  .features__image-container {
+    padding-bottom: 5rem;
+  }
+}
