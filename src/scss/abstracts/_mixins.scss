@@ -14,3 +14,10 @@
   left: $left;
   bottom: $bottom;
 }
+
+
+@mixin heading-box-centered {
+  max-width: 55rem;
+  margin: 3.2rem auto 0;
+  text-align: center;
+}

@@ -1,10 +1,10 @@
 .features {
   padding: $default-padding-x-large;
   min-height: 80rem;
+  padding-bottom: 7rem;
 
   &__description {
-    max-width: 55rem;
-    margin: 3.2rem auto 0;
+    @include heading-box-centered;
   }
 
   &__list {
@@ -41,6 +41,11 @@
     position: relative !important;
     z-index: 7;
     @include img-reset;
+  }
+
+  &__text {
+   margin: auto 0;
+   padding: 0 0 3rem 10rem;
   }
 }
 

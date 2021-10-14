@@ -1,0 +1,8 @@
+.download {
+  padding: $default-padding-x-large;
+  padding-bottom: 10rem;
+
+  &__description {
+    @include heading-box-centered;
+  }
+}
