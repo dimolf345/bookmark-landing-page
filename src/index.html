@@ -108,8 +108,8 @@
       </section>
       <!-- SECTION FEATURES WITH CENTER TEXT DIV AND TABS -->
       <section class="features">
-        <div class="features__description text-center">
-          <h2>Features</h2>
+        <div class="features__description">
+          <h2 class="mb-4">Features</h2>
           <p>
             Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices so you
@@ -174,9 +174,9 @@
                   />
                   <div class="ellipse ellipse--right"></div>
                 </div>
-                <div class="col-lg-6 col-md-6 feature__text">
-                  <h2>Bookmark in one click</h2>
-                  <p>
+                <div class="col-lg-6 col-md-6 features__text">
+                  <h2 class="mb-4">Bookmark in one click</h2>
+                  <p class="mb-4">
                     Organize your bookmarks however you like. Our simple
                     drag-and-drop interface gives you complete control over how
                     you manage your favourite sites.
@@ -201,12 +201,12 @@
                   />
                   <div class="ellipse ellipse--right"></div>
                 </div>
-                <div class="col-lg-6 col-md-6 feature__text">
-                  <h2>Bookmark in one click</h2>
-                  <p>
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favourite sites.
+                <div class="col-lg-6 col-md-6 features__text">
+                  <h2 class="mb-4">Intelligent search</h2>
+                  <p class="mb-4">
+                    Our powerful search feature will help you find saved sites
+                    in no time at all. No need to trawl through all of your
+                    bookmarks.
                   </p>
                   <a href="#" class="btn btn-primary">More info</a>
                 </div>
@@ -228,15 +228,87 @@
                   />
                   <div class="ellipse ellipse--right"></div>
                 </div>
-                <div class="col-lg-6 col-md-6 feature__text">
-                  <h2>Bookmark in one click</h2>
-                  <p>
-                    Organize your bookmarks however you like. Our simple
-                    drag-and-drop interface gives you complete control over how
-                    you manage your favourite sites.
+                <div class="col-lg-6 col-md-6 features__text">
+                  <h2 class="mb-4">Share your bookmarks</h2>
+                  <p class="mb-4">
+                    Easily share your bookmarks and collections with others.
+                    Create a shareable link that you can send at the click of a
+                    button.
                   </p>
                   <a href="#" class="btn btn-primary">More info</a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION DOWNLOAD WITH THREE CARDS -->
+      <section class="download">
+        <div class="download__description">
+          <h2 class="mb-4">Download the extension</h2>
+          <p>
+            We've got more browsers in the pipeline. Please do let us know if
+            you've got a favourite you'd like us to prioritize.
+          </p>
+        </div>
+        <!-- CARD CONTAINER USING BOOTSTRAP GRID COLS -->
+        <div class="container cards">
+          <!-- CARDS -->
+          <div
+            class="
+              row row-cols-3 row-cols-lg-3
+              gx-5
+              row-cols-md-1
+              cards__wrapper
+            "
+          >
+            <!-- col-lg-4 col-md-4 col-sm-12 -->
+            <!-- CARD 1 OF 3 -->
+            <div class="col align-self-start">
+              <div class="cards__card">
+                <img
+                  src="./assets/images/logo-chrome.svg"
+                  alt="chrome browser logo"
+                  class="cards__image"
+                />
+                <h3 class="cards__title">Add to Chrome</h3>
+                <p class="cards__text">Minimum version 62</p>
+                <hr class="cards__line" />
+                <button class="btn btn-primary cards__button">
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+            <!-- CARD 2 OF 3 -->
+            <div class="col align-self-center">
+              <div class="cards__card">
+                <img
+                  src="./assets/images/logo-firefox.svg"
+                  alt="firefox browser logo"
+                  class="cards__image"
+                />
+                <h3 class="cards__title">Add to Firefox</h3>
+                <p class="cards__text">Minimum version 55</p>
+                <hr class="cards__line" />
+                <button class="btn btn-primary cards__button">
+                  Add & Install Extension
+                </button>
+              </div>
+            </div>
+            <!-- CARD 3 OF 3 -->
+            <div class="col align-self-end">
+              <div class="cards__card">
+                <img
+                  src="./assets/images/logo-opera.svg"
+                  alt="opera browser logo"
+                  class="cards__image"
+                />
+                <h3 class="cards__title">Add to Opera</h3>
+                <p class="cards__text">Minimum version 46</p>
+                <hr class="cards__line" />
+                <button class="btn btn-primary cards__button">
+                  Add & Install Extension
+                </button>
               </div>
             </div>
           </div>
