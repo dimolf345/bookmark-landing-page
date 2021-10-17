@@ -1,0 +1,18 @@
+.ellipse {
+  z-index: 2;
+  height: 75%;
+  width: 1000px;
+  background-color: $color-primary;
+
+  &--left {
+    @include absolute($top: 25%, $left: 20%);
+    border-top-left-radius: 316.5px;
+    border-bottom-left-radius: 316.5px;
+  }
+
+  &--right {
+    @include absolute($top: 25%, $right: 30%);
+    border-top-right-radius: 316.5px;
+    border-bottom-right-radius: 316.5px;
+  }
+}

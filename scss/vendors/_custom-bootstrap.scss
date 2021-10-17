@@ -1,0 +1,169 @@
+//Custom.scss
+//Include any default variable overrides here (though functions won't be available)
+
+//Boostrap import
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//then add additional custom code here
+//=========GENERAL CLASSES========
+.btn {
+  padding: 1.2rem 2.4rem;
+  border-radius: 5px;
+  min-width: 11rem;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  &:active {
+    box-shadow: none !important;
+    transform: scale(0.95);
+  }
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: $color-primary;
+  border: 2px solid $color-primary;
+
+  &:hover {
+    color: $color-primary;
+    background-color: white;
+    border-color: $color-primary;
+  }
+}
+
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: $color-secondary;
+  border: 2px solid $color-secondary;
+  color: $white;
+
+  &:hover {
+    color: $text-hover;
+    background-color: white;
+    border-color: $text-hover;
+  }
+}
+
+.btn-light,
+.btn-light:focus,
+.btn-light:active {
+  background-color: $light-gray;
+  color: $very-dark-blue;
+  border: 2px solid $light-gray;
+  margin-left: 1.6rem;
+
+  &:hover {
+    background-color: white;
+    border-color: $grayish-blue;
+    color: $grayish-blue;
+  }
+}
+
+// =========NAVBAR============
+.header {
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.navbar {
+  @include standard-padding;
+  padding-top: 4.8rem;
+}
+
+.navbar-brand,
+.navbar-toggler {
+  @include scale-logo;
+}
+
+.navbar-toggler-icon {
+  background: url("../assets/images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+}
+
+.nav-item {
+  margin-right: 4.4rem;
+
+  @media only screen and (max-width: $large) {
+    margin-right: 3.4rem;
+  }
+}
+
+.nav-link {
+  color: $text-primary;
+  font-size: $font-size-link;
+
+  &:hover {
+    color: $text-hover;
+  }
+}
+
+#navbarNav {
+  .btn {
+    letter-spacing: 1.5px;
+    font-weight: $font-weight-reg;
+  }
+}
+
+//IMAGES
+.img-fluid {
+  position: relative;
+  z-index: 5;
+}
+
+// =========ACCORDION============
+.accordion {
+  margin-bottom: 5.4rem;
+}
+
+.accordion-item {
+  border-left-color: transparent;
+  border-right-color: transparent;
+  text-align: left;
+  padding: 2rem 0 2rem 0;
+}
+
+.accordion-button {
+  font-size: 1.8rem;
+  color: $text-primary;
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  &:not(.collapsed) {
+    background-color: transparent;
+    color: currentColor;
+  }
+
+  &.collapsed::after {
+    background-image: url("../assets/images/icon-arrow.svg");
+  }
+
+  &:not(.collapsed)::after {
+    background-image: url("../assets/images/icon-arrow-red.svg");
+  }
+
+  &:focus {
+    border-color: $color-primary;
+    box-shadow: none;
+  }
+}
+
+.accordion-body {
+  p {
+    font-size: 1.6rem;
+    color: $text-primary;
+    line-height: 2.25;
+  }
+}
+
+// ============FORM============
+.form-control-lg {
+  height: 100%;
+
+  &::placeholder {
+    color: $text-secondary;
+  }
+}
