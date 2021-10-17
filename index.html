@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- FIXED TOP HEADER -->
+  <header class="header container-fluid fixed-top">
+    <nav class="navbar navbar-expand-md">
+      <a href="#" class="navbar-brand">
+        <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+          <desc>The bookmark logo</desc>
+          <g fill="none" fill-rule="evenodd">
+            <path
+              d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+              fill="#242A45" fill-rule="nonzero" />
+            <g>
+              <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5" />
+              <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF" />
+            </g>
+          </g>
+        </svg>
+      </a>
+      <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-secondary">Login</a>
+      </div>
+    </nav>
+  </header>
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- SECTION HERO -->
+    <section class="hero container-fluid">
+      <div class="row gx-0">
+        <div class="hero__text col-lg-6 col-md-6 col-sm-12">
+          <h1 class="mb-4">a simple bookmark manager</h1>
+          <p class="mb-5">
+            A clean and simple interface to organize your favourite
+            websites.<br />Open a new browser tab and see your sites load
+            istantly. Try it for free.
+          </p>
+          <a href="#" class="btn btn-primary">Get it on Chrome</a>
+          <a href="#" class="btn btn-light">Get it on Firefox</a>
+        </div>
+
+        <div class="hero__image-container col-lg-6 col-md-6 col-sm-12">
+          <img class="img-fluid" src="./assets/images/illustration-hero.svg"
+            alt="a browser window with bookmark menu" />
+          <div class="ellipse ellipse--left"></div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION FEATURES WITH CENTER TEXT DIV AND TABS -->
+    <section class="features">
+      <div class="features__description">
+        <h2 class="mb-4">Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your
+          favourite websites. Your bookmarks sync between your devices so you
+          can access them on the go.
+        </p>
+      </div>
+      <!-- TAB LIST -->
+      <ul id="features-tabs" class="features__list nav" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="simple-bookmarking" data-bs-toggle="tab" data-bs-target="#feature1" role="tab"
+            aria-controls="feature1" aria-selected="true">Simple Bookmarking</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="speedy-searching" data-bs-toggle="tab" data-bs-target="#feature2" role="tab"
+            aria-controls="feature2" aria-selected="false">Speedy Searching</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="easy-sharing" data-bs-toggle="tab" data-bs-target="#feature3" role="tab"
+            aria-controls="feature3" aria-selected="false">Easy Sharing</a>
+        </li>
+      </ul>
+      <!-- TAB CONTENT -->
+      <div class="container" id="features-panel">
+        <div class="tab-content">
+          <!-- TAB NR. 1 -->
+          <div class="tab-pane fade show active" id="feature1" role="tabpanel" aria-labelledby="simple-bookmarking">
+            <div class="row d-flex">
+              <div class="col-lg-6 col-md-9 features__image-container">
+                <img src="./assets/images/illustration-features-tab-1.svg" alt="" class="img-fluid" />
+                <div class="ellipse ellipse--right"></div>
+              </div>
+              <div class="col-lg-6 col-md-9 features__text">
+                <h2 class="mb-4">Bookmark in one click</h2>
+                <p class="mb-4">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <a href="#" class="btn btn-primary">More info</a>
+              </div>
+            </div>
+          </div>
+          <!-- TAB NR. 2 -->
+          <div class="tab-pane fade" id="feature2" role="tabpanel" aria-labelledby="speedy-searching">
+            <div class="row d-flex">
+              <div class="col-lg-6 col-md-9 features__image-container">
+                <img src="./assets/images/illustration-features-tab-2.svg" alt="" class="img-fluid" />
+                <div class="ellipse ellipse--right"></div>
+              </div>
+              <div class="col-lg-6 col-md-9 features__text">
+                <h2 class="mb-4">Intelligent search</h2>
+                <p class="mb-4">
+                  Our powerful search feature will help you find saved sites
+                  in no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <a href="#" class="btn btn-primary">More info</a>
+              </div>
+            </div>
+          </div>
+          <!-- TAB NR. 3 -->
+          <div class="tab-pane fade" id="feature3" role="tabpanel" aria-labelledby="easy-sharing">
+            <div class="row d-flex">
+              <div class="col-lg-6 col-md-9 features__image-container">
+                <img src="./assets/images/illustration-features-tab-3.svg" alt="" class="img-fluid" />
+                <div class="ellipse ellipse--right"></div>
+              </div>
+              <div class="col-lg-6 col-md-9 features__text">
+                <h2 class="mb-4">Share your bookmarks</h2>
+                <p class="mb-4">
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <a href="#" class="btn btn-primary">More info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION DOWNLOAD WITH THREE CARDS -->
+    <section class="download">
+      <div class="download__description">
+        <h2 class="mb-4">Download the extension</h2>
+        <p>
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.
+        </p>
+      </div>
+      <!-- CARD CONTAINER USING BOOTSTRAP GRID COLS -->
+      <div class="container cards">
+        <!-- CARDS -->
+        <div class="
+              row row-cols-1 row-cols-lg-3
+              gx-5
+              cards__wrapper
+            ">
+          <!-- col-lg-4 col-md-4 col-sm-12 -->
+          <!-- CARD 1 OF 3 -->
+          <div class="col align-self-start">
+            <div class="cards__card">
+              <img src="./assets/images/logo-chrome.svg" alt="chrome browser logo" class="cards__image" />
+              <h3 class="cards__title">Add to Chrome</h3>
+              <p class="cards__text">Minimum version 62</p>
+              <div class="cards__line" />
+            </div>
+            <button class="btn btn-primary cards__button">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <!-- CARD 2 OF 3 -->
+        <div class="col align-self-center">
+          <div class="cards__card">
+            <img src="./assets/images/logo-firefox.svg" alt="firefox browser logo" class="cards__image" />
+            <h3 class="cards__title">Add to Firefox</h3>
+            <p class="cards__text">Minimum version 55</p>
+            <div class="cards__line" />
+          </div>
+          <button class="btn btn-primary cards__button">
+            Add & Install Extension
+          </button>
+        </div>
+      </div>
+      <!-- CARD 3 OF 3 -->
+      <div class="col align-self-end">
+        <div class="cards__card">
+          <img src="./assets/images/logo-opera.svg" alt="opera browser logo" class="cards__image" />
+          <h3 class="cards__title">Add to Opera</h3>
+          <p class="cards__text">Minimum version 46</p>
+          <div class="cards__line" />
+        </div>
+        <button class="btn btn-primary cards__button">
+          Add & Install Extension
+        </button>
+      </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- END OF SECTION DOWNLOAD -->
+    <!-- SECTION FAQ WITH BOOTSTRAP CUSTOMIZED ACCORDION -->
+    <section class="faq">
+      <div class="faq__description">
+        <h2 class="mb-4">frequently asked questions</h2>
+        <p class="mb-5">
+          Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+        </p>
+        <!-- START OF ACCORDION -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <!-- ACCORDION ITEM #1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                What is Bookmark?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies
+                  fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+              </div>
+            </div>
+          </div>
+          <!-- ACCORDION ITEM #2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                How can I request a new browser?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <p>
+                  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+                  imperdiet. Vivamus luctus eros liquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies
+                  non ligula. Suspendisse imperdiet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ACCORDION ITEM #3 -->
+          <div class="accordion-item">
+            <h2 class="" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Is there a mobile app?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <p>
+                  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin
+                  ex et ultricies bibendum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ACCORDION ITEM #4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFour">
+                What about other Chromium browsers?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae
+                  neque eget nisl gravida pellentesque non ut velit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END OF ACCORDION -->
+        <a href="#" class="btn btn-primary">More info</a>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="subscription__description">
+        <p class="subscription__paragraph">35.000+ already joined</p>
+        <h2 class="subscription__title">Stay up-to-date with what we're doing</h2>
+      </div>
+      <form class="subscription__form">
+        <input 
+        aria-label="email subscription input"
+        type="email" 
+        class="form-control form-control-lg"
+        placeholder="Enter your email address" />
+        <button class="btn btn-secondary" type="submit">
+          Contact us
+        </button>
+      </form>
+    </section>
+    <footer class="footer container-fluid">
+      <nav class="navbar">
+              <a href="#" class="navbar-brand">
+        <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+          <desc>The bookmark logo</desc>
+          <g fill="none" fill-rule="evenodd">
+            <path
+              d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+              fill="#fff" fill-rule="nonzero" />
+            <g>
+              <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5" />
+              <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF" />
+            </g>
+          </g>
+        </svg>
+      </a>
+      <ul class="footer__nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="footer__socials">
+          <li class="footer__social-item">
+            <a href="#">
+              <svg 
+              class="footer__icon"
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">
+             <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </main>
+  <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script  src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.features {
+  @include standard-padding;
+
+  &__description {
+    @include heading-box-centered;
+  }
+
+  #features-panel {
+    min-height: 41.7rem;
+  }
+
+  &__list {
+    max-width: 73rem;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 5rem auto;
+    font-size: 1.6rem;
+    border-bottom: 3px solid $light-gray;
+
+    .nav-item {
+      margin-right: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-link {
+      color: $text-secondary;
+      height: 100%;
+      display: block;
+      padding-bottom: 2.7rem;
+
+      &.active {
+        color: $text-primary;
+        border-bottom: 3px solid $soft-red;
+      }
+    }
+  }
+
+  &__image-container {
+    position: relative;
+  }
+  &__image {
+    position: relative !important;
+    z-index: 7;
+    @include img-reset;
+  }
+
+  &__text {
+    margin: auto 0;
+    padding: 0 0 3rem 8%;
+  }
+}
+
+.tab-pane {
+  min-height: max-content;
+
+  .row {
+    justify-content: center;
+  }
+}
+
+#feature1 {
+  .features__image-container {
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: $large) {
+  .features {
+    &__text {
+      text-align: center;
+      padding: 3.2rem 0;
+    }
+  }
+}

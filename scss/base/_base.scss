@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5% !important; //1rem = 10px
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  margin: 0 auto;
+  max-width: 144rem;
+  overflow-x: clip;
+}
+
+header {
+  max-width: 144rem;
+}
+
+main {
+  @include main-margin-top;
+  overflow-x: auto;
+}
+
+section {
+  @include standard-section-margin;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}

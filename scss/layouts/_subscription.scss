@@ -1,0 +1,29 @@
+.subscription {
+  padding: 5.8rem 0 7.4rem;
+  background-color: $color-primary;
+
+  &__description,
+  &__form {
+    max-width: 44rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__paragraph {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 0.5rem;
+  }
+
+  &__title {
+    color: white;
+    margin: 2.4rem 0 3.2rem;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.6rem;
+  }
+}
