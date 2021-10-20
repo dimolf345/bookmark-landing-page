@@ -1,0 +1,7 @@
+.download {
+  @include standard-padding;
+
+  &__description {
+    @include heading-box-centered;
+  }
+}

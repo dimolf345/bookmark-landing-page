@@ -1,0 +1,10 @@
+.faq {
+  @include standard-padding;
+
+  &__description {
+    @include heading-box-centered;
+    h2 {
+      text-transform: capitalize;
+    }
+  }
+}
