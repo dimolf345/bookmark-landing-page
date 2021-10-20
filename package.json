@@ -1,10 +1,11 @@
 {
   "name": "bookmark-landing-page",
   "version": "1.0.0",
+  "main": "index.js",
   "description": "A frontend mentor challenge",
   "scripts": {
     "dev": "parcel ./src/index.html ",
-    "build": "parcel build ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./  --experimental-scope-hoisting --out-dir build",
     "prebuild": "npx rimraf build",
     "compile-sass": "node-sass -w ./src/scss/main.scss ./src/css/style.css"
   },
