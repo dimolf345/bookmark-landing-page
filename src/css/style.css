@@ -8015,7 +8015,7 @@ header {
 
 main {
   margin-top: 6rem;
-  overflow-x: auto; }
+  overflow-x: clip; }
 
 section {
   margin-top: 14.9rem; }
