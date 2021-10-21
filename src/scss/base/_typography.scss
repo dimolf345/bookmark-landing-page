@@ -14,8 +14,38 @@ h2 {
   font-size: 3.2rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
 p {
   color: $text-secondary;
   font-size: 1.8rem;
   line-height: 1.55;
+}
+
+@media only screen and (max-width: $v-large) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: $large) {
+  h1 {
+    font-size: 3.4rem;
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 }

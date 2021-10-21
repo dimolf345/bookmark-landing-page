@@ -3,10 +3,6 @@
   width: 100%;
 }
 
-@mixin box-shadow {
-  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 @mixin absolute($top: null, $right: null, $bottom: null, $left: null) {
   position: absolute;
   top: $top;
@@ -15,9 +11,44 @@
   bottom: $bottom;
 }
 
-
 @mixin heading-box-centered {
   max-width: 55rem;
   margin: 3.2rem auto 0;
   text-align: center;
+}
+
+@mixin standard-padding {
+  padding-left: 12%;
+  padding-right: 12%;
+
+  @media only screen and (max-width: $medium) {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
+@mixin hover-svg($color: null) {
+  &:hover > * {
+    transition: all 0.2s ease-in-out;
+    fill: $color;
+  }
+}
+
+@mixin main-margin-top {
+  margin-top: 6rem;
+}
+
+@mixin standard-section-margin {
+  margin-top: 14.9rem;
+
+  @media only screen and (max-width: $medium) {
+    margin-top: 7.7rem;
+  }
+}
+
+@mixin scale-logo {
+  @media only screen and (max-width: $medium) and (min-width: $small) {
+    transform: scale(1.5);
+    margin-left: 3.2rem;
+  }
 }

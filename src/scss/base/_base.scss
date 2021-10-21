@@ -20,8 +20,19 @@ body {
 
 header {
   max-width: 144rem;
+  position: relative;
 }
 
 main {
-  margin-top: 20rem;
+  @include main-margin-top;
+  overflow-x: auto;
+}
+
+section {
+  @include standard-section-margin;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
 }
