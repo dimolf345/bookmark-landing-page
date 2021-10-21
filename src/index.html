@@ -49,7 +49,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Features</a>
+            <a class="nav-link" href="#">Features</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
@@ -79,10 +79,10 @@
   <!-- MAIN CONTENT -->
   <main>
     <!-- SECTION HERO -->
-    <section class="hero container-fluid">
+    <section aria-labelledby="simple-bookmark" class="hero container-fluid">
       <div class="row gx-0">
         <div class="hero__text col-lg-6 col-md-6 col-sm-12">
-          <h1 class="mb-4">a simple bookmark manager</h1>
+          <h1 id="simple-bookmark" class="mb-4">a simple bookmark manager</h1>
           <p class="mb-5">
             A clean and simple interface to organize your favourite
             websites.<br/> Open a new browser tab and see your sites load
@@ -96,15 +96,15 @@
 
         <div class="hero__image-container col-lg-6 col-md-6 col-sm-12">
           <img class="img-fluid" src="./assets/images/illustration-hero.svg"
-            alt="a browser window with bookmark menu" />
+            alt="an illustration of a browser window with bookmark menu" />
           <div class="ellipse ellipse--left"></div>
         </div>
       </div>
     </section>
     <!-- SECTION FEATURES WITH CENTER TEXT DIV AND TABS -->
-    <section class="features">
+    <section aria-labelledby="features" class="features">
       <div class="features__description">
-        <h2 class="mb-4">Features</h2>
+        <h2 id="features" class="mb-4">Features</h2>
         <p>
           Our aim is to make it quick and easy for you to access your
           favourite websites. Your bookmarks sync between your devices so you
@@ -187,9 +187,9 @@
       </div>
     </section>
     <!-- SECTION DOWNLOAD WITH THREE CARDS -->
-    <section class="download">
+    <section  aria-labelledby="download" class="download">
       <div class="download__description">
-        <h2 class="mb-4">Download the extension</h2>
+        <h2 id="download" class="mb-4">Download the extension</h2>
         <p>
           We've got more browsers in the pipeline. Please do let us know if
           you've got a favourite you'd like us to prioritize.
@@ -248,9 +248,9 @@
     </section>
     <!-- END OF SECTION DOWNLOAD -->
     <!-- SECTION FAQ WITH BOOTSTRAP CUSTOMIZED ACCORDION -->
-    <section class="faq">
+    <section aria-labelledby="faq" class="faq">
       <div class="faq__description">
-        <h2 class="mb-4">frequently asked questions</h2>
+        <h2 id="faq" class="mb-4">frequently asked questions</h2>
         <p class="mb-5">
           Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
         </p>
@@ -324,7 +324,7 @@
               </button>
             </h2>
             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-              aria-labelledby="panelsStayOpen-headingTwo">
+              aria-labelledby="panelsStayOpen-headingFour">
               <div class="accordion-body">
                 <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae
                   neque eget nisl gravida pellentesque non ut velit.</p>
@@ -335,11 +335,11 @@
         <!-- END OF ACCORDION -->
         <a href="#" class="btn btn-primary">More info</a>
       </div>
-    </section>
-    <section class="subscription">
+    </section aria-labelledby="subscription-title">
+    <section  class="subscription">
       <div class="subscription__description">
         <p class="subscription__paragraph">35.000+ already joined</p>
-        <h2 class="subscription__title">Stay up-to-date with what we're doing</h2>
+        <h2  id="subscription-title" class="subscription__title">Stay up-to-date with what we're doing</h2>
       </div>
       <form class="subscription__form">
         <input 
@@ -352,7 +352,7 @@
         </button>
       </form>
     </section>
-    <footer class="footer container-fluid">
+    <footer aria-label="footer-nav" class="footer container-fluid">
       <nav class="navbar">
               <a href="#" class="navbar-brand">
         <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
@@ -382,28 +382,37 @@
         <ul class="footer__socials">
           <li class="footer__social-item">
             <a href="#">
+              <span class="visually-hidden">Facebook page</span>
               <svg 
               class="footer__icon"
-              xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <desc>Facebook icon</desc>
+              <path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#">
-             <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+              <span class="visually-hidden">Twitter page</span>
+             <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+              <desc>Twitter icon</desc>
+              <path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
             </a>
           </li>
         </ul>
       </nav>
     </footer>
   </main>
-  <!-- <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer> -->
+  <footer>
+ <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/dimolf345"
+        >Luca Di Molfetta</a
+      >.
+    </div>
+    </footer>
   <!-- <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
   <script  src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
   <script type="module" src="./index.js"></script>
