@@ -8308,6 +8308,8 @@ p {
     text-transform: uppercase;
     color: #9194a1;
     transition: color 0.3s ease; }
+    .footer .nav-link:hover {
+      color: #fa5757; }
   .footer__social-item {
     width: max-content;
     height: max-content;
@@ -8317,9 +8319,7 @@ p {
   .footer__nav {
     margin-left: auto; }
   .footer .nav-item {
-    margin-right: 4%; }
-  .footer .nav-link:hover {
-    color: #fa5757; } }
+    margin-right: 4%; } }
 
 @media only screen and (max-width: 48em) {
   .footer {
