@@ -1,5 +1,5 @@
 import * as bootstrap from "bootstrap";
-import validator from "validator";
+import * as validator from "validator";
 
 let id = (id) => document.getElementById(id);
 
