@@ -2,6 +2,11 @@
   padding: 5.8rem 0 7.4rem;
   background-color: $color-primary;
 
+  &__success {
+    color: white;
+    grid-column: 1/-1;
+  }
+
   &__description,
   &__form {
     max-width: 44rem;
@@ -21,10 +26,48 @@
     margin: 2.4rem 0 3.2rem;
   }
 
+  &__error {
+    display: none;
+    @include absolute($right: 5%, $top: 50%);
+    right: 5%;
+    transform: translate(-5%, -50%);
+    height: 20px !important;
+  }
+
+  &__error-message {
+    display: block;
+    @include absolute($bottom: 2px, $left: 0);
+    transform: translate(0, 100%);
+    width: 100%;
+    height: auto !important;
+    background-color: $color-secondary;
+    text-align: left;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    padding: 0.2rem 1rem 0;
+    border: 6px solid $color-secondary;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+
   &__form {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.6rem;
+
+    .invalid {
+      border: 2px solid $color-secondary;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+    height: 100%;
+
+    & > * {
+      height: 100%;
+    }
   }
 }
 
@@ -35,6 +78,7 @@
       width: 100%;
       grid-template-columns: 1fr;
       grid-template-rows: 4.8rem;
+      gap: 4.8rem;
     }
   }
 }

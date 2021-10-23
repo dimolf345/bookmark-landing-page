@@ -8089,20 +8089,22 @@ p {
     padding-right: 1rem; } }
 
 @media only screen and (max-width: 48em) {
-  .hero__image-container {
-    order: 0 !important; }
-  .hero__text {
-    order: 2;
-    margin-top: 4.8rem;
-    text-align: center;
-    padding-right: 0; }
-    .hero__text br {
-      display: none; }
-  .hero__btn-container {
-    display: flex; }
-    .hero__btn-container .btn {
-      width: 50%;
-      padding: 1.2rem 0; } }
+  .hero {
+    margin-top: 14.9rem; }
+    .hero__image-container {
+      order: 0 !important; }
+    .hero__text {
+      order: 2;
+      margin-top: 4.8rem;
+      text-align: center;
+      padding-right: 0; }
+      .hero__text br {
+        display: none; }
+    .hero__btn-container {
+      display: flex; }
+      .hero__btn-container .btn {
+        width: 50%;
+        padding: 1.2rem 0; } }
 
 .features {
   padding-left: 12%;
@@ -8208,6 +8210,9 @@ p {
 .subscription {
   padding: 5.8rem 0 7.4rem;
   background-color: #5368df; }
+  .subscription__success {
+    color: white;
+    grid-column: 1/-1; }
   .subscription__description, .subscription__form {
     max-width: 44rem;
     margin: 0 auto;
@@ -8220,10 +8225,42 @@ p {
   .subscription__title {
     color: white;
     margin: 2.4rem 0 3.2rem; }
+  .subscription__error {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+    height: 20px !important; }
+  .subscription__error-message {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    transform: translate(0, 100%);
+    width: 100%;
+    height: auto !important;
+    background-color: #fa5757;
+    text-align: left;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    padding: 0.2rem 1rem 0;
+    border: 6px solid #fa5757;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem; }
   .subscription__form {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.6rem; }
+    .subscription__form .invalid {
+      border: 2px solid #fa5757; }
+  .subscription__input-wrapper {
+    position: relative;
+    height: 100%; }
+    .subscription__input-wrapper > * {
+      height: 100%; }
 
 @media only screen and (max-width: 48em) {
   .subscription {
@@ -8238,7 +8275,8 @@ p {
     .subscription__form {
       width: 100%;
       grid-template-columns: 1fr;
-      grid-template-rows: 4.8rem; } }
+      grid-template-rows: 4.8rem;
+      gap: 4.8rem; } }
 
 .footer {
   background-color: #252b46;
