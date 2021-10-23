@@ -341,12 +341,22 @@
         <p class="subscription__paragraph">35.000+ already joined</p>
         <h2  id="subscription-title" class="subscription__title">Stay up-to-date with what we're doing</h2>
       </div>
-      <form class="subscription__form">
-        <input 
+      <form novalidate id="subscription-form" class="subscription__form">
+        <div class="subscription__input-wrapper">
+        <input
+        id="subscription-email"
+        title="Enter your email for subscribe" 
         aria-label="email subscription input"
         type="email" 
+        required
         class="form-control form-control-lg"
         placeholder="Enter your email address" />
+        <div class="subscription__error">
+          <img src="./assets/images/icon-error.svg" alt="error icon">
+         </div>
+         
+
+        </div>
         <button class="btn btn-secondary" type="submit">
           Contact us
         </button>
@@ -413,9 +423,9 @@
       >.
     </div>
     </footer>
-  <!-- <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-  <script  src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-  <script type="module" src="./index.js"></script>
+  <!-- <script type="text/javascript" src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script  type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script type="text/javascript" src="../node_modules/validator/validator.min.js"></script> -->
+  <script type="text/javascript" src="./index.js"></script>
 </body>
-
 </html>
