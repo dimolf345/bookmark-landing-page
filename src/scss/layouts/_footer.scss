@@ -40,6 +40,10 @@
     text-transform: uppercase;
     color: $text-secondary;
     transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-secondary;
+    }
   }
 
   &__social-item {
@@ -57,10 +61,6 @@
 
     .nav-item {
       margin-right: 4%;
-    }
-
-    .nav-link:hover {
-      color: $soft-red;
     }
   }
 }
