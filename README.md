@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.JPG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/bookmark-page-built-with-bootstrap-parcel-sass-and-validatorjs-OH9JOy6BY)
-- Live Site URL: [Add live site URL here](https://bookmark-landing-page-dimolf345.netlify.app/)
+- Solution URL: [ttps://www.frontendmentor.io/solutions/bookmark-page-built-with-bootstrap-parcel-sass-and-validatorjs-OH9JOy6BY](https://www.frontendmentor.io/solutions/bookmark-page-built-with-bootstrap-parcel-sass-and-validatorjs-OH9JOy6BY)
+- Live Site URL: [https://bookmark-landing-page-dimolf345.netlify.app/](https://bookmark-landing-page-dimolf345.netlify.app/)
 
 ## My process
 
